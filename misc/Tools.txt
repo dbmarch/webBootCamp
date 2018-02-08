@@ -1,0 +1,76 @@
+9:48 PM
+
+Tools:
+
+Postman
+https://www.getpostman.com/
+
+
+Sublime
+https://www.sublimetext.com/3
+
+
+Node
+https://nodejs.org/en/download/
+
+
+C9 Account:
+
+https://stackoverflow.com/questions/47278926/how-to-create-c9-account-without-credit-card
+
+https://github.com/nax3t/aws-cloud9-instructions
+
+
+Environment:
+Now type npm -v, you should see 3.10.10 (or higher)
+
+
+sudo apt-install npm
+sudo apt-install yum-utils
+
+
+
+
+Links:
+
+
+
+
+
+Mongodb:
+
+Step 1 — Adding the MongoDB Repository
+MongoDB is already included in Ubuntu package repositories, but the official MongoDB repository provides most up-to-date version and is the recommended way of installing the software. In this step, we will add this official repository to our server.
+
+Ubuntu ensures the authenticity of software packages by verifying that they are signed with GPG keys, so we first have to import they key for the official MongoDB repository.
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+After successfully importing the key, you will see:
+
+Output
+gpg: Total number processed: 1
+gpg:               imported: 1  (RSA: 1)
+Next, we have to add the MongoDB repository details so apt will know where to download the packages from.
+
+Issue the following command to create a list file for MongoDB.
+
+echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+After adding the repository details, we need to update the packages list.
+
+sudo apt-get update
+Step 2 — Installing and Verifying MongoDB
+Now we can install the MongoDB package itself.
+
+sudo apt-get install -y mongodb-org
+This command will install several packages containing latest stable version of MongoDB along with helpful management tools for the MongoDB server.
+
+Next, start MongoDB with systemctl.
+
+sudo systemctl start mongod
+You can also use systemctl to check that the service has started properly.
+
+sudo systemctl status mongod
+
+sudo systemctl enable mongod
+
+

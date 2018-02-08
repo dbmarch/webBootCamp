@@ -1,0 +1,38 @@
+/* RR GG BB */
+
+h1 {
+   color: rgba(0,200,100,0.8);
+   border-color: purple;
+   border-width: 5px;
+   border-style: dotted;
+}
+li {
+    color: rgb(33,33,33);
+}
+
+h2 {
+   color:rgba(255,0,0,.4);
+   border: 5px dot green;
+}
+
+
+h3 {
+   color: #FFFF00;
+}
+
+
+h4 {
+   color: rgb (68,0,100);
+   background: rgb(255,100,0);
+}
+
+body {
+    background: pink;
+    /*  background: url(https://248qms3nhmvl15d4ne1i4pxl-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/Bitcoin-trading-down-760x400.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+}
+
+
+
